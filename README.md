@@ -1,5 +1,5 @@
 # Runner
-Small utility written in ruby that wraps a command run inside OS X **notifications**. It supports running as an arbitrary user and to a remote host.
+Small utility written in ruby that wraps a command run inside OS X **notifications**. It supports running as an arbitrary user and to a remote host (via ssh).
 
 ## Instalation
 Copy-paste this script in some terminal and hit enter.

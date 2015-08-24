@@ -69,7 +69,7 @@ class Runner
       op.separator ""
       op.separator "Options:"
 
-      op.on('-h', '--host [HOST]', 'Host to run the command. [default: localhost]') { |h| @options[:host] = h }
+      op.on('-h', '--host [HOST]', 'Host to run the command on (via ssh). [default: localhost]') { |h| @options[:host] = h }
       op.on('-u', '--as-user [USER]', 'Run command as specified user') { |u| @options[:user] = u }
       op.on('-n', '--[no-]notify', 'Send a native OS X notification') { |n| @options[:notify] = n }
       op.on('-v', '--[no-]verbose', 'Run verbosely') { |v| @options[:verbose] = v }
