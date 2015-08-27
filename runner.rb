@@ -36,7 +36,7 @@ class Runner
     drop_output = ' > /dev/null 2>&1'
     verbose_expr = @options[:verbose] ? '' : "#{drop_output}"
 
-    command = "bash -c '#{escape_quotes!(@command)}'#{verbose_expr}"
+    command = "bash -cil '#{escape_quotes!(@command)}'#{verbose_expr}"
     command = "sudo -su #{@options[:user]} #{escape_quotes!(command)}" if @options[:user]
     command = "ssh #{@options[:host]} $\"#{command}\"" if @options[:host]
     command
